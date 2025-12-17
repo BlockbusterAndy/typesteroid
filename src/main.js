@@ -2,6 +2,7 @@ import kaboom from "kaboom";
 import { loadAssets } from "./loader.js";
 import { registerGameScene } from "./scenes/game.js";
 import { registerGameOverScene } from "./scenes/gameOver.js";
+import { registerStartScene } from "./scenes/start.js";
 
 // Initialize Kaboom
 kaboom({
@@ -16,6 +17,7 @@ loadAssets();
 // Register Scenes
 registerGameScene();
 registerGameOverScene();
+registerStartScene();
 
 // Start Game
-go("game");
+go("start");
